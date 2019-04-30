@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+		body{
+			font-family: 'Indie Flower', cursive;
+			background-color: #00A994;
+		}
+		h1{
+			text-align: center;
+			background-color: #F5811F;
+		}
+		label.upload-group {
+			width: 80px;
+			height: 40px;
+			color: white;
+			padding: 5 5 5 5;
+			text-align: center;
+			background-color: blue;
+
+		}
+		input#file{
+			width: 0.1px;
+			height: 0.1px;
+			position: absolute;
+			z-index: -1;
+		}
+		form{
+			align-items: center;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>File Upload</h1>
+	<form>
+		
+	
+	<label class="upload-group">
+		Upload File
+		<input type="file" id="file" class="upload-group">
+	</label>
+	<button class="btn btn-primary" id="uploadButton" onclick="uploadFile()">SUBMIT</button>
+	</form>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCXRoeLUkRfkdymNZ1tWBAyBBjCrjOlGrw",
+    authDomain: "assign-1eea5.firebaseapp.com",
+    databaseURL: "https://assign-1eea5.firebaseio.com",
+    projectId: "assign-1eea5",
+    storageBucket: "assign-1eea5.appspot.com",
+    messagingSenderId: "1054001155512"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="a1.js"></script>
+</body>
+</html>
