@@ -1,3 +1,4 @@
+//code to store data in mongodb database 
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
